@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './layout/components/Header';
 import Slide from './layout/components/Slide';
+import CenterPanel from './layout/components/CenterPanel';
 
 export default class App extends Component {
 
@@ -8,8 +9,8 @@ export default class App extends Component {
     movieList: []
   }
 
-  async componentDidMount() {
-    fetch('https://yts.lt/api/v2/list_movies.json?')
+   componentDidMount() {
+    fetch('https://yts.lt/api/v2/list_movies.json?order_by=desc&limit=50')
       .then(res => res.json())
       .then(
         (result) => {
@@ -42,7 +43,8 @@ export default class App extends Component {
     return (
       <div className="zmovo-main dark-bg">
         <Header />
-        <Slide />
+        <Slide  />
+        <CenterPanel movieList={this.state.movieList} />
       </div>
     );
   }
