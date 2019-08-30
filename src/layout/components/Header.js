@@ -26,7 +26,7 @@ export default function Header() {
                                                     <li><a href="/">Home 5</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="/railor.html">Trailor</a></li>
+                                            <li><a href="/railor.html">Categories</a></li>
                                             <li><a href="/bout.html">About</a></li>
                                             <li className="has-sub"><span className="submenu-button"></span><a href="/">Product</a>
                                                 <ul>
@@ -78,16 +78,12 @@ export default function Header() {
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     <div className="col-lg-2 zmovo-t-right">
                         <div className="zmovo-header-right">
-                            <div className="zmovo-top-search">
-                                <div className="zmovo-ser-icon" id="clickserch"><span className="fa fa-search"></span></div>
-                                <div className="zmovo-hidden-search" id="opensearch">
-                                    <input type="text" placeholder="Enter the movie Name" />
-                                </div>
-                            </div>
+
                             <div className="zmovo-login">
                                 <a href="/" className="btn login-btn"><span className="fa fa-user"></span> Login</a>
                             </div>
