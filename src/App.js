@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from './layout/components/Header';
 import Slide from './layout/components/Slide';
-import CenterPanel from './layout/components/CenterPanel';
+import Home from './layout/components/Home';
+import Footer from './layout/components/Footer';
 
 export default class App extends Component {
 
@@ -44,7 +45,8 @@ export default class App extends Component {
       <div className="zmovo-main dark-bg">
         <Header />
         <Slide  />
-        <CenterPanel movieList={this.state.movieList} />
+        <Home movieList={this.state.movieList} />
+        <Footer />
       </div>
     );
   }
