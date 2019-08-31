@@ -4,18 +4,18 @@ export default function Footer() {
     return(
         <div>
 
-            <footer class="zmovo-footer-area pt-50">
-                <div class="zmovo-footer">
-                    <div class="container">
-                        <div class="zmovo-footer-center pt-50">
-                            <div class="zmovo-ft-widgets">
-                                <div class="row">
-                                    <div class="col-sm-6 col-lg-3">
-                                        <div class="zmovo-ft-widget">
-                                            <div class="zmovo-ft-widget-titles">
-                                                <h2 class="zmovo-ft-widget-title">Movies Category</h2>
+            <footer className="zmovo-footer-area pt-50">
+                <div className="zmovo-footer">
+                    <div className="container">
+                        <div className="zmovo-footer-center pt-50">
+                            <div className="zmovo-ft-widgets">
+                                <div className="row">
+                                    <div className="col-sm-6 col-lg-3">
+                                        <div className="zmovo-ft-widget">
+                                            <div className="zmovo-ft-widget-titles">
+                                                <h2 className="zmovo-ft-widget-title">Movies Category</h2>
                                             </div>
-                                            <div class="zmoto-ft-widget-contetn">
+                                            <div className="zmoto-ft-widget-contetn">
                                                 <ul>
                                                     <li><a href="/">Movies</a></li>
                                                     <li><a href="/">Videos</a></li>
@@ -28,12 +28,12 @@ export default function Footer() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-lg-3">
-                                        <div class="zmovo-ft-widget">
-                                            <div class="zmovo-ft-widget-titles no-text">
-                                                <h2 class="zmovo-ft-widget-title">information</h2>
+                                    <div className="col-sm-6 col-lg-3">
+                                        <div className="zmovo-ft-widget">
+                                            <div className="zmovo-ft-widget-titles no-text">
+                                                <h2 className="zmovo-ft-widget-title">information</h2>
                                             </div>
-                                            <div class="zmoto-ft-widget-contetn">
+                                            <div className="zmoto-ft-widget-contetn">
                                                 <ul>
                                                     <li><a href="/">About Us</a></li>
                                                     <li><a href="/">Song</a></li>
@@ -46,12 +46,12 @@ export default function Footer() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-lg-3">
-                                        <div class="zmovo-ft-widget">
-                                            <div class="zmovo-ft-widget-titles no-text">
-                                                <h2 class="zmovo-ft-widget-title">Locations</h2>
+                                    <div className="col-sm-6 col-lg-3">
+                                        <div className="zmovo-ft-widget">
+                                            <div className="zmovo-ft-widget-titles no-text">
+                                                <h2 className="zmovo-ft-widget-title">Locations</h2>
                                             </div>
-                                            <div class="zmoto-ft-widget-contetn">
+                                            <div className="zmoto-ft-widget-contetn">
                                                 <ul>
                                                     <li><a href="/">South Korea</a></li>
                                                     <li><a href="/">Germany</a></li>
@@ -64,28 +64,28 @@ export default function Footer() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-lg-3">
-                                        <div class="zmovo-ft-widget">
-                                            <div class="zmovo-ft-widget-titles">
-                                                <h2 class="zmovo-ft-widget-title">Newsletter</h2>
+                                    <div className="col-sm-6 col-lg-3">
+                                        <div className="zmovo-ft-widget">
+                                            <div className="zmovo-ft-widget-titles">
+                                                <h2 className="zmovo-ft-widget-title">Newsletter</h2>
                                             </div>
-                                            <div class="zmoto-ft-widget-contetn">
-                                                {/* <div class="zmovo-ft-newsletter">
+                                            <div className="zmoto-ft-widget-contetn">
+                                                {/* <div className="zmovo-ft-newsletter">
                                                     <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anytg embarrassing hidden.</p>
-                                                    <div class="zmovo-ft-newsletter-area pt-30">
-                                                        <div class="zmovo-ft-newsletter">
-                                                            <input type="text" class="form-control" placeholder="Enter Address" />
-                                                            <button type="submit"><span class="fa fa-paper-plane"></span></button>
+                                                    <div className="zmovo-ft-newsletter-area pt-30">
+                                                        <div className="zmovo-ft-newsletter">
+                                                            <input type="text" className="form-control" placeholder="Enter Address" />
+                                                            <button type="submit"><span className="fa fa-paper-plane"></span></button>
                                                         </div>
                                                     </div>
                                                 </div> */}
-                                                <div class="zmovo-ft-social-widget pt-50">
+                                                <div className="zmovo-ft-social-widget pt-50">
                                                     <ul>
-                                                        <li><a href="/"><span class="fab fa-facebook"></span></a></li>
-                                                        <li><a href="/"><span class="fab fa-twitter"></span></a></li>
-                                                        <li><a href="/"><span class="fab fa-linkedin"></span></a></li>
-                                                        <li><a href="/"><span class="fab fa-youtube"></span></a></li>
-                                                        <li><a href="/"><span class="fab fa-instagram"></span></a></li>
+                                                        <li><a href="/"><span className="fab fa-facebook"></span></a></li>
+                                                        <li><a href="/"><span className="fab fa-twitter"></span></a></li>
+                                                        <li><a href="/"><span className="fab fa-linkedin"></span></a></li>
+                                                        <li><a href="/"><span className="fab fa-youtube"></span></a></li>
+                                                        <li><a href="/"><span className="fab fa-instagram"></span></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -96,11 +96,11 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div class="zmovo-footer-buttom">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-5 col-lg-6">
-                                <div class="zmovo-ft-menu">
+                <div className="zmovo-footer-buttom">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-5 col-lg-6">
+                                <div className="zmovo-ft-menu">
                                     <ul>
                                         <li><a href="/">Terms</a></li>
                                         <li><a href="/">Privacy</a></li>
@@ -109,9 +109,9 @@ export default function Footer() {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-7 col-lg-6">
-                                <div class="zmovo-ft-copyright">
-                                    <p>CopyRight 2019 Develop by <a href="/" class="c1">Themepul</a> . All Rights Reserved.</p>
+                            <div className="col-sm-7 col-lg-6">
+                                <div className="zmovo-ft-copyright">
+                                    <p>CopyRight 2019 Develop by <a href="/" className="c1">Themepul</a> . All Rights Reserved.</p>
                                 </div>
                             </div>
                         </div>
