@@ -1,48 +1,52 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from './layout/components/Header';
-import Slide from './layout/components/Slide';
-import Home from './layout/components/Home';
+import MovieService from './utils/MovieService';
+import ShowService from './utils/ShowService';
+import Header from './layout/Header';
+import Slide from './layout/Slide';
+import Home from './layout/Home';
 import Movie from './components/Movie';
-import Footer from './layout/components/Footer';
+import Footer from './layout/Footer';
 
 export default class App extends Component {
 
-  state = {
-    movieList: []
+  constructor(props) {
+    super(props);
+    this.state = {
+      movieList: []
+    }
   }
 
   componentDidMount() {
-    fetch('https://yts.lt/api/v2/list_movies.json?order_by=desc&limit=50')
-      .then(res => res.json())
-      .then(
-        (result) => {
-          console.log(result.data.movies);
-          this.setState({
-            movieList: result.data.movies
+    let that = this;
+    MovieService.getMovieTrack().then(function (list) {
+      let aux = list;
+      list.map((movies, i) => {
+        MovieService.getMovieDb(movies.movie.ids.tmdb).then(function (movie) {
+          aux[i].img = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
+          aux[i].genres = movie.genres;
+          aux[i].overview = movie.overview;
+          aux[i].popularity = movie.popularity;
+          aux[i].runtime = movie.runtime;
+          // console.log(movie);
+          that.setState({
+            movieList: aux
           })
-        },
-        (error) => {
-          console.log(error)
-        }
-      )
+        })
+      })
+    })
+    // ShowService.getShowTrack().then(function (list){
+    //   let aux = list;
+    //   console.log(list);
+    //   list.map((shows, i) => {
+    //     ShowService.getShowDb(shows.show.ids.tmdb).then(function (show) {
+
+    //     })
+    //   })
+
+    // })
   }
-
   render() {
-
-    // const movies = this.state.movieList.map(movie => {
-    //   return (
-    //     <div className="col-3" key={movie.id}>
-    //       <div className="card">
-    //         <div className="card-body">
-    //           {movie.title}
-
-    //         </div>
-    //       </div>
-    //     </div>
-    //   );
-    // });
-
     return (
       <Router>
         <div className="zmovo-main dark-bg">
