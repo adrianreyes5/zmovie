@@ -1,8 +1,8 @@
 import React from 'react';
-import ImageSlide1 from '../../img/1.jpg';
-import ImageSlide2 from '../../img/avengers_endgame.jpg';
-import ImageSlide3 from '../../img/lion_king.jpeg';
-import Playbutton from '../../img/play-button.png';
+import ImageSlide1 from '../img/1.jpg';
+import ImageSlide2 from '../img/avengers_endgame.jpg';
+import ImageSlide3 from '../img/lion_king.jpeg';
+import Playbutton from '../img/play-button.png';
 
 export default function Slide() {
     return (
