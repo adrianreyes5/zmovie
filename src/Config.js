@@ -11,4 +11,4 @@ export const TMDB_CLIENT_ID = 'a7b8b83ebd6cad0455799f04ba3c74a8';
 export const IMG_URI = 'https://image.tmdb.org/t/p/w500/';
 
 export const OMDB_CLIENT = 'a305903e';
-export const OMDB_URI = 'http://www.omdbapi.com/';
+export const OMDB_URI = 'https://www.omdbapi.com/';
