@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MovieService from '../utils/MovieService';
-import Image1 from '../img/1.jpg';
 
 class Movie extends Component {
     constructor(props) {
@@ -15,7 +14,7 @@ class Movie extends Component {
         let that = this;
         const movie_id = this.props.match.params.movie_id;
         MovieService.getMovieOMDB(movie_id).then(function (movie) {
-            console.log(movie);
+            // console.log(movie);
             that.setState({
                 movie: movie
             })
@@ -78,7 +77,7 @@ class Movie extends Component {
                                                                                 <li><span>Actors <label>:</label></span><a href="/">{actors}</a></li>
                                                                                 <li><span>Genre <label>:</label></span><a href="/">{genres}</a></li>
                                                                                 <li><span>releace <label>:</label></span><a href="/">{released}</a></li>
-                                                                                <li><span>languase <label>:</label></span><a href="/">{languague}</a></li>
+                                                                                <li><span>language <label>:</label></span><a href="/">{languague}</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>

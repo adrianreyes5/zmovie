@@ -6,6 +6,7 @@ import Header from './layout/Header';
 import Slide from './layout/Slide';
 import Home from './layout/Home';
 import Movie from './components/Movie';
+import Show from './components/Show';
 import Footer from './layout/Footer';
 
 export default class App extends Component {
@@ -60,7 +61,7 @@ export default class App extends Component {
       let aux_show = list_show;
       list_show.map((shows, i) => {
         ShowService.getShowDb(shows.show.ids.tmdb).then(function (show) {
-          console.log(aux_show);
+          // console.log(aux_show);
           aux_show[i].poster_img = "https://image.tmdb.org/t/p/w500" + show.poster_path;
           aux_show[i].episodie_run_time = show.episodie_run_time;
           aux_show[i].first_air_date = show.first_air_date;
@@ -90,7 +91,8 @@ export default class App extends Component {
                 popular_shows={this.state.popular_shows}
               />}
             />
-            <Route exact path="/movie/:movie_id" component={Movie} />
+            <Route exact path="/movie/:movie_id" render={props => <Movie {...props} />} />
+            <Route exact path="/show/:show_id" render={props => <Show {...props} />} />
           </Switch>
           <Footer />
         </div>
